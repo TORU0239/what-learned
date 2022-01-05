@@ -1,4 +1,5 @@
-# 5 Wed Jan 2022
+# Jan 2022
+### 5 Wed 
 
 1. Understood how to migrate gradle to 7 from 6 series, with some configuration changes
 2. Java 11 with Android Arctic Fox 
