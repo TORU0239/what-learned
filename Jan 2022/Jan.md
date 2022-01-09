@@ -8,3 +8,8 @@
 ### 6 Thur
 
 1. Documenting is still ongoing, no highlights
+
+### 9 Sun
+
+1. Created a new repository in Github to try OWASP (Vulnerability scanning tool, open source)
+2. Checked the report after enabling and disabling DataBinding
