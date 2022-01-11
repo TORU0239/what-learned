@@ -13,3 +13,7 @@
 
 1. Created a new repository in Github to try OWASP (Vulnerability scanning tool, open source)
 2. Checked the report after enabling and disabling DataBinding
+
+### 10 Mon
+
+1. Realized databinding uses simpler dependencies than viewbinding, which means it has less possibilities to be caught by scanning.
