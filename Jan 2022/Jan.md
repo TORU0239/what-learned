@@ -23,7 +23,10 @@
 1. When deploying in production (release variant), `debuggable` has to be false, otherwise build machine won't sign the aab appropriately.
 2. It causes error `The Android App Bundle was not signed` but Android studio should show a warning message!
 
-### 27 Wed
+### 26 Wed
 
 1. The importance of problem sets for interviewing ppl.
 
+### 28 Fri
+
+1. Drag and Drop helper has been added to Jetpack library, in alpha version
