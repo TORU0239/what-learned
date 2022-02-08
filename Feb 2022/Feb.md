@@ -39,5 +39,5 @@ class Truck implements Car {
 ```
 ### 8 Feb
 1. Fastlane doesn't seem to work to deploy directly to internal track.
-2. I should wait for the alpha track to be reviewed at least 2 days, (found while testing promoting to alpha from internal) 
-3. Have to provide the graphics e.g full size icon and more than 2 screenshots per device type, for Alpha
+   * I should wait for the alpha track to be reviewed at least 2 days, (found while testing promoting to alpha from internal) 
+   * Have to provide the graphics e.g full size icon and more than 2 screenshots per device type, for Alpha
