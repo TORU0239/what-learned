@@ -37,3 +37,6 @@ class Truck implements Car {
   String carName() => "Benz Actros"
 }
 ```
+### 8 Feb
+1. Fastlane doesn't seem to work to deploy directly to internal track.
+2. And should wait for the alpha track to be reviewed at least 2 days, (found while testing promoting to alpha from internal)
