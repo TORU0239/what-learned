@@ -41,3 +41,6 @@ class Truck implements Car {
 1. Fastlane doesn't seem to work to deploy directly to internal track.
    * I should wait for the alpha track to be reviewed at least 2 days, (found while testing promoting to alpha from internal) 
    * Have to provide the graphics e.g full size icon and more than 2 screenshots per device type, for Alpha
+
+### 10 Feb
+1. The latest version of Firebase crashlytics might require JAVA 11
