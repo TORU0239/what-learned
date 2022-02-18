@@ -44,3 +44,18 @@ class Truck implements Car {
 
 ### 10 Feb
 1. The latest version of Firebase crashlytics might require JAVA 11
+
+### 17 Feb
+1. interface singleton in Kotlin
+```
+interface Server {
+    fun execute(request: Request): Response
+    companion object : Server {
+        private val client = OkHttpClient()
+        
+        override fun execute(request: Request): Response =
+            client.newCall(request).execute()
+    }
+}
+```
+* By creating a companion object for an interface, it's possible to refer to both the interface and its singleton implementation at the same time.
