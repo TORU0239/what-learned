@@ -59,3 +59,12 @@ interface Server {
 }
 ```
 * By creating a companion object for an interface, it's possible to refer to both the interface and its singleton implementation at the same time.
+
+### 23 Feb
+1. api vs implementation in Gradle
+    * The main difference is how the dependencies can expose themselves when a dependency references another dependency in the diagram structure.
+    * Given A <- B <- C, when A is declared as `api`, then C can access to A. Moreover if A has been modified, then B and C will be built again.
+    * But when A is `implementation`, C will have no access to A, and only B will be built again. 
+2. `runtimeOnly` vs `compileTimeOnly`
+    * `runtimeOnly` can tell that this dependency will be needed in runtime e.g. log
+    * `compileTimeOnly` can inform us that this dependency will be only used in compile time, not in runtime
