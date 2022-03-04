@@ -2,13 +2,17 @@
 ### 4 Feb
 
 * How to update dependencies used in a transitive dependency
-example
+
+Look at the example below.
+
 ```implementation 'com.github.bumptech.glide:okhttp3-integration:4.1.13'```
 
 This uses an outdated dependency `com.squareup.okhttp3.okhttp:3.12.1`, but the latest is `4.9.3`.
 So we can follow the steps below.
 
-```implementation 'com.github.bumptech.glide:okhttp3-integration'
+```
+implementation 'com.github.bumptech.glide:okhttp3-integration'
+
 constraint {
     implementation("com.github.bumptech.glide:okhttp3-integration:4.13.1") {
         because 'Previous version may cause security issues'
