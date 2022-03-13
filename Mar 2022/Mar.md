@@ -26,9 +26,14 @@ Therefore, we can follow the steps below.
 ### 11 Mar
 
 1. How to use Nexus (internal repo)
+   
    ```sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target```
+   
    In order to avoid this message, We have to add certification of nexus server to Android Studio
-   Go to jre folder of System, and use keytools like below
+   Go to jre folder of System, and use keytools like below 
+   
    ```./bin/keytool -importcert -file /path/to/your/certificate/my-root-ca-cert.cer -keystore ./jre/lib/security/cacerts -storepass changeit -noprompt```
+   
    Just in case, Go and find server certification in Android Studio, and add the optional certificate.
+   
    Lastly restart Android studio.
