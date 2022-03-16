@@ -37,3 +37,44 @@ Therefore, we can follow the steps below.
    Just in case, Go and find server certification in Android Studio, and add the optional certificate.
    
    Lastly restart Android studio.
+   
+### 16 Mar
+
+1. Adding Firebase into `build.gradle` when the gradle version is above 7.3
+
+    ```
+    // Top-level build file where you can add configuration options common to all sub-projects/modules.
+    buildscript {
+        dependencies {
+            classpath 'com.google.dagger:hilt-android-gradle-plugin:2.38.1'
+            classpath 'com.google.gms:google-services:4.3.10'
+        }
+    }
+
+    plugins {
+        id 'com.android.application' version '7.1.2' apply false
+        id 'com.android.library' version '7.1.2' apply false
+        id 'org.jetbrains.kotlin.android' version '1.6.10' apply false
+    }
+    ...
+    ```
+    Cause `google()` is already defined in `settings.gradle`, so we don't need to declare that `google()` in the project level `build.gradle`.
+    See below.
+    
+    ```
+    pluginManagement {
+        repositories {
+            gradlePluginPortal()
+            google()
+            mavenCentral()
+        }
+    }
+    
+    dependencyResolutionManagement {
+        repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+        repositories {
+            google()
+            mavenCentral()
+        }
+    }
+    ```
