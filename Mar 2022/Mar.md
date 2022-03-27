@@ -78,3 +78,6 @@ Therefore, we can follow the steps below.
         }
     }
     ```
+
+## 26 Mar 
+1. `Startup Library` has used `WorkManager` internally so if we try to use it in `create()` of subclassed `Initializer`, it will crash.
